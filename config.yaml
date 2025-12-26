@@ -9,10 +9,11 @@ listenbrainz:
       exec_options:
         run_cmd: >
           powershell -NoProfile -File C:\<___CHANGE_PATH_HERE___>\listenbrainz-widget.ps1
-        run_interval: 30000000   # every 5 minutes
+        run_interval: 300000   # every 5 minutes
         return_format: "json"
         hide_empty: false
         use_shell: true
       callbacks:
         on_left: "exec cmd /c start https://listenbrainz.org/user/<___CHANGE_USERNAME_HERE___>/"
+
         on_middle: "toggle_label"
