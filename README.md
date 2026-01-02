@@ -9,7 +9,7 @@ Save this file to a folder, it will be needed for step 3.
 Be sure to replace ```<CHANGE_USERNAME_HERE>``` with your ListenBrainz username. 
 
 ## 2.  listenbrainz-widget.cmd
-Save this file to the same folder folder.  
+Save this file to the same folder.  
 
 ## 3. YASB's config.yaml
 Copy/Paste the code of ```config.yaml``` in your own ```config.yaml``` file.  
