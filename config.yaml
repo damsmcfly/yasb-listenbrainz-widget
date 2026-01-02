@@ -7,8 +7,7 @@ listenbrainz:
       tooltip: true
       tooltip_label: "<b>{data[username]}</b> (listenbrainz)<hr><span>\udb81\udf5a</span>&nbsp;&nbsp;<b>Total listens:</b> {data[playcount]}<hr><span>\udb81\udf5a</span>&nbsp;&nbsp;<b>Recent listens:</b><br>{data[recent_listens]}<br>"
       exec_options:
-        run_cmd: >
-          powershell -NoProfile -File C:\<___CHANGE_PATH_HERE___>\listenbrainz-widget.ps1
+        un_cmd: C:\<___CHANGE_PATH_HERE___>\listenbrainz-widget.ps1
         run_interval: 300000   # every 5 minutes
         return_format: "json"
         hide_empty: false
@@ -17,3 +16,4 @@ listenbrainz:
         on_left: "exec cmd /c start https://listenbrainz.org/user/<___CHANGE_USERNAME_HERE___>/"
 
         on_middle: "toggle_label"
+
